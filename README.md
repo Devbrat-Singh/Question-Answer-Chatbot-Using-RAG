@@ -101,7 +101,7 @@ docs/
 ## ▶️ Run the Project
 
 ```bash
-python ingestion_pipeline.py
+python 1_ingestion_pipeline_usingFAISS.py
 ```
 
 ---
@@ -126,28 +126,7 @@ This project provides **two implementations**:
 
 ---
 
-## 🔵 1. ChromaDB Version
-
-### ✅ When to use:
-
-* You want **persistent database with metadata**
-* You plan to scale your project
-* You want **production-level vector DB**
-
-### ❗ Requirements:
-
-* Requires **C++ Build Tools (Windows)**
-* May fail without proper setup
-
-### 🔧 Used in code:
-
-```python
-from langchain_chroma import Chroma
-```
-
----
-
-## 🟢 2. FAISS Version (Recommended)
+## 🟢 1. FAISS Version (Recommended)
 
 ### ✅ When to use:
 
@@ -169,6 +148,28 @@ from langchain_community.vectorstores import FAISS
 ```
 
 ---
+## 🔵 2. ChromaDB Version
+
+### ✅ When to use:
+
+* You want **persistent database with metadata**
+* You plan to scale your project
+* You want **production-level vector DB**
+
+### ❗ Requirements:
+
+* Requires **C++ Build Tools (Windows)**
+* May fail without proper setup
+
+### 🔧 Used in code:
+
+```python
+from langchain_chroma import Chroma
+```
+
+---
+
+
 
 ## ⚖️ Chroma vs FAISS
 
